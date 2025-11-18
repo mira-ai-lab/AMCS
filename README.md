@@ -111,7 +111,7 @@ sh scripts/eval/cot_rerank.sh
 
 ## 🧱 Credits
 
-The core code of this project is based on [openr]([openreasoner/openr: OpenR: An Open Source Framework for Advanced Reasoning with Large Language Models](https://github.com/openreasoner/openr))
+The core code of this project is based on [openr](https://github.com/openreasoner/openr).
 
 ## 📑Citation
 
@@ -128,4 +128,5 @@ If you find our work helpful for your research, please consider citing our paper
       url={https://arxiv.org/abs/2509.24351}, 
 }
 ```
+
 
