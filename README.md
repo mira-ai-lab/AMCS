@@ -113,3 +113,15 @@ sh scripts/eval/cot_rerank.sh
 
 If you find our work helpful for your research, please consider citing our paper:
 
+```
+@misc{ma2025staticdynamicadaptivemonte,
+      title={From Static to Dynamic: Adaptive Monte Carlo Search for Mathematical Process Supervision}, 
+      author={Jie Ma and Shihao Qi and Rui Xing and Ziang Yin and Bifan Wei and Jun Liu and Tongliang Liu},
+      year={2025},
+      eprint={2509.24351},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2509.24351}, 
+}
+```
+
