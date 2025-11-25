@@ -14,13 +14,13 @@ Based on AMCS, we constructed a high-quality process supervision dataset contain
 
 ```
 AMCS/
-├── adaptive_omegaprm/                #data generation    
+├── main/                #data generation    
 │   ├── grader.py                     
 │   ├── llm_utils.py                  
-│   ├── omegaprm.py                   #Core data generation logic
+│   ├── prm.py                   #Core data generation logic
 │   ├── process_json.py
-│   ├── run_omegaprm.py          
-│   └── run_omegaprm_multi_gpu.sh               
+│   ├── run.py          
+│   └── run_multi_gpu.sh               
 ├── envs/                             #Data environment
 │   ├── MATH/            
 │   ├── tests/    
@@ -58,17 +58,17 @@ pip install -r requirements.txt
 ```
 ### 3. Generation of MathSearch-200K Datasets
 
-Run `adaptive_omegaprm/process.py`  to split the original data.
+Run `main/process_json.py`  to split the original data.
 
 ```
-python adaptive_omegaprm/process.py
+python main/process_json.py
 ```
 
-Then,use `adaptive_omegaprm/run_omegaprm.py`  to generate process supervision data.
+Then,use `main/run_multi_gpu.sh`  to generate process supervision data.
 
 ```bash
 # Run data generation on multiple GPUs
-bash adaptive_omegaprm/run_omegaprm_multi_gpu.sh
+bash main/run_multi_gpu.sh
 ```
 
 ### 4. Process Reward Model Training
